@@ -16,4 +16,5 @@ public class Question {
     private Long questionId;
     @Column(name = "content", nullable = false)
     private String content;
+    private String image;
 }
