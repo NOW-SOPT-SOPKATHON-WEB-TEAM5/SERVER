@@ -44,24 +44,52 @@
 <br/>
 
 <h2>  📄 컨벤션 및 브랜치 전략 </h2>
-깃 컨벤션 https://imdevdoy.notion.site/a55623a3ef1d4e209e110f34d0a54af4?pvs=4 <br />
-코딩 컨벤션 https://imdevdoy.notion.site/c359ec0da03749a7b696b54d9f1e93b5?pvs=4
+깃 컨벤션 [https://imdevdoy.notion.site/a55623a3ef1d4e209e110f34d0a54af4?pvs=4](https://trusted-tendency-0e4.notion.site/89fea6884c0a4b9fb4bb207598bdaded?pvs=4) <br />
+코드 컨벤션 [https://imdevdoy.notion.site/c359ec0da03749a7b696b54d9f1e93b5?pvs=4](https://trusted-tendency-0e4.notion.site/e7e5f2dce5d04736b05a6054c868b955?pvs=4)
 
+<h2>  📄 API 명세서  </h2>
+https://trusted-tendency-0e4.notion.site/API-c6c712ad103446cf8f20d4073b717b17?pvs=4
 <br/>
 
 <h2> 📁 폴더 구조 </h2>
 
 ```
-
+\---src
+    +---main
+    |   \---java
+    |       \---sopt
+    |           \---hackathon
+    |               \---hakka
+    |                   |   HakkaApplication.java
+    |                   |
+    |                   +---controller
+    |                   +---domain
+    |                   |
+    |                   +---dto
+    |                   |   +---common
+    |                   |   +---request
+    |                   |   +---response
+    |                   |   \---type
+    |                   +---exception
+    |                   +---repository
+    |                   |
+    |                   \---service
+    \---test
+        \---java
+            \---sopt
+                \---hackathon
+                    \---hakka
+                            HakkaApplicationTests.java
 ```
 
 <h3>우리조 그라운드 룰</h3>
-웃으면서, 밝게, 자신있게 <br />
+웃으면서, 밝게, 자신있게! <br />
 이슈 생기면 바로 공유하기!
 
 <h2> 난이서버 시작!! Before and After</h2>
 <h3>Before</h3>
-<img src="" width="400px" />
+
+<img src="https://github.com/NOW-SOPT-SOPKATHON-WEB-TEAM5/SERVER/assets/101867059/6aa0936c-1c8c-468f-baff-dbaae9aeb046" width="400px" />
  
 <h3>After</h3>
 <img src="" alt="서버 팀원들 사진 (after)"/>
