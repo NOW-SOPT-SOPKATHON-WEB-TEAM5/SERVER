@@ -2,9 +2,9 @@ package sopt.hackathon.hakka.dto.common;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
+import org.antlr.v4.runtime.misc.NotNull;
 import org.springframework.http.HttpStatus;
+import org.springframework.lang.Nullable;
 import sopt.hackathon.hakka.dto.type.ErrorCode;
 
 public record ApiResponse<T>(
