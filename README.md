@@ -52,7 +52,7 @@ https://trusted-tendency-0e4.notion.site/API-c6c712ad103446cf8f20d4073b717b17?pv
 <br/>
 
 <h2>  📄 ERD  </h2>
-![image](https://github.com/NOW-SOPT-SOPKATHON-WEB-TEAM5/SERVER/assets/101867059/a8113524-98cd-4a9c-a5fa-10362e351e81)
+<img src="https://github.com/NOW-SOPT-SOPKATHON-WEB-TEAM5/SERVER/assets/101867059/a8113524-98cd-4a9c-a5fa-10362e351e81" width="400px" />
 
 
 <h2> 📁 폴더 구조 </h2>
