@@ -12,6 +12,7 @@ public enum ErrorCode {
     MISSING_REQUEST_HEADER(400, HttpStatus.BAD_REQUEST, "필수 헤더가 누락되었습니다."),
     // 404 Not Found
     NOT_FOUND_END_POINT(400, HttpStatus.NOT_FOUND, "존재하지 않는 API입니다."),
+    NOT_FOUND_QUESTION(400, HttpStatus.NOT_FOUND, "존재하지 않는 질문입니다."),
     NOT_FOUND_MEMBER(400, HttpStatus.NOT_FOUND, "존재하지 않는 사용자입니다.");
 
 
