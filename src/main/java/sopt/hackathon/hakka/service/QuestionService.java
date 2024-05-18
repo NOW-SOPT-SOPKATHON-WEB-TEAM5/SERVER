@@ -17,7 +17,13 @@ public class QuestionService {
     private final QuestionRepository questionRepository;
     @Transactional(readOnly = true)
     public QuestionResponseDto getQuestion(Long questionId) {
-        System.out.println(questionId);
         return QuestionResponseDto.of(questionRepository.findQuestionById(questionId));
     }
+    @Transactional(readOnly = true)
+    public List<QuestionResponseDto> getAll() {
+        return questionRepository.findAll().stream()
+                .map(question -> new QuestionResponseDto(question.getQuestionId(), question.getContent(), question.getImage()))
+                .collect(Collectors.toList());
+    }
+
 }

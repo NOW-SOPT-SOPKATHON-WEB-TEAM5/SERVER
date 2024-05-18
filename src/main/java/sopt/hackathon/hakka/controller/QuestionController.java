@@ -9,6 +9,8 @@ import sopt.hackathon.hakka.dto.common.ApiResponse;
 import sopt.hackathon.hakka.dto.response.QuestionResponseDto;
 import sopt.hackathon.hakka.service.QuestionService;
 
+import java.util.List;
+
 @RestController
 @RequiredArgsConstructor(access = AccessLevel.PROTECTED)
 public class QuestionController {
@@ -19,5 +21,10 @@ public class QuestionController {
             @PathVariable Long questionId
     ){
         return ApiResponse.ok(questionService.getQuestion(questionId));
+    }
+    @GetMapping("/question")
+    public ApiResponse<List<QuestionResponseDto>> getAllQuestions() {
+        List<QuestionResponseDto> questions = questionService.getAll();
+        return ApiResponse.ok(questions);
     }
 }
