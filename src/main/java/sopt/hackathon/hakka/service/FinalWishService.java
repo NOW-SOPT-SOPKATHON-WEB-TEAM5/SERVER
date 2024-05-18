@@ -26,10 +26,15 @@ import java.util.List;
 public class FinalWishService {
     private final MemberRepository memberRepository;
     private final WishRepository wishRepository;
-
-    public List<FinalWishResponseDto> getFinalWishes(Long memberId){
     private final QuestionRepository questionRepository;
     private final FinalWishRespository finalWishRespository;
+
+    @Transactional(readOnly = true)
+    public List<FinalWishResponseDto> getFinalWishes(Long memberId){
+        Member member = memberRepository.findMemberById(memberId);
+        return FinalWishResponseDto.findAll(finalWishRespository.findAllByMember(member));
+    }
+
     @Transactional
     public void postFinalWish(Long memberId, Long questionId) {
         Member member = memberRepository.findMemberById(memberId);
