@@ -2,6 +2,7 @@ package sopt.hackathon.hakka.domain;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -20,4 +21,12 @@ public class FinalWish {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "wish_id")
     private Wish wish;
+
+    private FinalWish(Member member, Wish wish) {
+        this.member = member;
+        this.wish = wish;
+    }
+    public static FinalWish create(Member member, Wish wish) {
+        return new FinalWish(member, wish);
+    }
 }

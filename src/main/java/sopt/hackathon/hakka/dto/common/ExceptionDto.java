@@ -1,6 +1,6 @@
 package sopt.hackathon.hakka.dto.common;
 
-import org.antlr.v4.runtime.misc.NotNull;
+import jakarta.validation.constraints.NotNull;
 import sopt.hackathon.hakka.dto.type.ErrorCode;
 
 public record ExceptionDto (
