@@ -2,11 +2,12 @@ package sopt.hackathon.hakka.dto.common;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.antlr.v4.runtime.misc.NotNull;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import jakarta.validation.constraints.NotNull;
 import org.springframework.http.HttpStatus;
 import org.springframework.lang.Nullable;
 import sopt.hackathon.hakka.dto.type.ErrorCode;
-
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public record ApiResponse<T>(
         @JsonIgnore
         HttpStatus httpStatus,
