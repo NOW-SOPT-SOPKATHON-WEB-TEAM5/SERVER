@@ -45,8 +45,7 @@
 
 <h2>  📄 컨벤션 및 브랜치 전략 </h2>
 깃 컨벤션 [https://imdevdoy.notion.site/a55623a3ef1d4e209e110f34d0a54af4?pvs=4](https://trusted-tendency-0e4.notion.site/89fea6884c0a4b9fb4bb207598bdaded?pvs=4) <br />
-코드 컨벤션 [https://imdevdoy.notion.site/c359ec0da03749a7b696b54d9f1e93b5?pvs=4](https://trusted-tendency-0e4.notion.site/e7e5f2dce5d04736b05a6054c868b955?pvs=4)
-
+코드 컨벤션 https://trusted-tendency-0e4.notion.site/e7e5f2dce5d04736b05a6054c868b955?pvs=4
 <h2>  📄 API 명세서  </h2>
 https://trusted-tendency-0e4.notion.site/API-c6c712ad103446cf8f20d4073b717b17?pvs=4
 <br/>
